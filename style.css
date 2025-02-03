@@ -1,0 +1,102 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent
+{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(243, 155, 41);   
+}
+.bar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bar
+{
+    height: 300px;
+    width: 35px;
+    border: 2px black solid;
+    background-color: blue;
+    position: absolute;
+    top: 150px;
+    left: 22%;
+
+}
+.bar2
+{
+    height: 300px;
+    width: 35px;
+    border: 2px black solid;
+    background-color: blue;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+
+}
+.bar1
+{
+    height: 290px;
+    width: 35px;
+    border: 2px black solid;
+    background-color: blue;
+    position: absolute;
+    top: 150px;
+    left: 75%;
+}
+
+.theif
+{
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    animation: 7s move linear;
+
+}
+.police
+{
+    position: absolute;
+    top: 5%;
+    animation: 7.9s move linear;
+    
+}
+
+
+@keyframes move 
+{
+   0%
+   {
+    position: absolute;
+    top: 0;
+    left:0;
+   }
+   20%
+   {
+    position: absolute;
+    top: 0;
+    left: 30%;
+}
+   40%
+   {
+    position: absolute;
+    top: 75%;
+    left: 30%;
+   }
+   60%
+   {
+    position: absolute;
+    top:75%;
+     left: 60%;
+}
+   80%
+   {
+    position: absolute;
+    top:0%;
+     left: 60%;
+   }
+}
+
